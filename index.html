@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <h1>ToDo List</h1>
+            <p>Список моих задач</p>
+        </div>
+
+        <div class="add-task">
+            <div class="add-task-header">
+                <p>Добавить новую задачу</p>
+            </div>
+            <div class="task-reader">
+                <form id="form">
+                    <div class="form-group">
+                        <input type="text" class="form-adder" id="task-input" placeholder="Введите вашу задачу">
+                    </div>
+                    <button type="submit" class="add-button">Добавить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <ul class="tasksList">
+                <li class="emptyList">
+                    <img class="empty-list-image" src="/images/leaf.svg" alt="Нет задач">
+                    <p class="empty-task-list">Список задач пуст</p>
+                </li>
+
+                <!-- <li class="filledList">
+                    <span class="task-object taks-object--done">123123123</span>
+                    <div class="task-buttons">
+                        <button type="button" data-action="done" class="agree-button">
+                            <img class="agree-image" src="/images/tick.svg" alt="Сделано">
+                        </button>
+                        <button type="button" data-action="delete" class="delete-button">
+                            <img class="delete-image" src="/images/cross.svg" alt="Удалить">
+                        </button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
